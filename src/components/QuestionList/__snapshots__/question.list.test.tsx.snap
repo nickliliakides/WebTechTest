@@ -4,38 +4,42 @@ exports[`Question list tests Snapshot Testing 1`] = `
 <div
   className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-5"
 >
-  <h1>
-    Questions
-  </h1>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-    disabled={false}
-    onBlur={[Function]}
-    onClick={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    style={
-      Object {
-        "marginBottom": 12,
-      }
-    }
-    tabIndex={0}
-    type="button"
+  <div
+    className="makeStyles-top_container-2"
   >
-    <span
-      className="MuiButton-label"
+    <h1>
+      Questions
+    </h1>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "marginLeft": 12,
+        }
+      }
+      tabIndex={0}
+      type="button"
     >
-      Fetch More Questions
-    </span>
-  </button>
+      <span
+        className="MuiButton-label"
+      >
+        Fetch More Questions
+      </span>
+    </button>
+  </div>
   <div
     className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
   >
@@ -51,18 +55,18 @@ exports[`Question list tests Snapshot Testing 1`] = `
         }
       >
         <div
-          className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root makeStyles-paper-3 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="MuiBox-root MuiBox-root-9 makeStyles-questionDetails-3"
+            className="MuiBox-root MuiBox-root-10 makeStyles-questionDetails-4"
           >
             <div
-              className="MuiBox-root MuiBox-root-10"
+              className="MuiBox-root MuiBox-root-11"
             >
               test
             </div>
             <div
-              className="MuiBox-root MuiBox-root-11"
+              className="MuiBox-root MuiBox-root-12"
               style={
                 Object {
                   "display": "inline",
@@ -74,7 +78,7 @@ exports[`Question list tests Snapshot Testing 1`] = `
               test
             </div>
             <div
-              className="MuiBox-root MuiBox-root-12 difficulty"
+              className="MuiBox-root MuiBox-root-13 difficulty"
               style={
                 Object {
                   "fontWeight": 700,
@@ -86,10 +90,10 @@ exports[`Question list tests Snapshot Testing 1`] = `
             </div>
           </div>
           <div
-            className="MuiBox-root MuiBox-root-13 makeStyles-buttons-4"
+            className="MuiBox-root MuiBox-root-14 makeStyles-buttons-5"
           >
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-edit_btn-6 makeStyles-button-5 MuiButton-containedPrimary"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-edit_btn-7 makeStyles-button-6 MuiButton-containedPrimary"
               data-testid="edit-button"
               disabled={false}
               onBlur={[Function]}
@@ -128,7 +132,7 @@ exports[`Question list tests Snapshot Testing 1`] = `
               </span>
             </button>
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-delete_btn-7 makeStyles-button-5 MuiButton-containedPrimary"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-delete_btn-8 makeStyles-button-6 MuiButton-containedPrimary"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -182,18 +186,18 @@ exports[`Question list tests Snapshot Testing 1`] = `
         }
       >
         <div
-          className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root makeStyles-paper-3 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="MuiBox-root MuiBox-root-14 makeStyles-questionDetails-3"
+            className="MuiBox-root MuiBox-root-15 makeStyles-questionDetails-4"
           >
             <div
-              className="MuiBox-root MuiBox-root-15"
+              className="MuiBox-root MuiBox-root-16"
             >
               test
             </div>
             <div
-              className="MuiBox-root MuiBox-root-16"
+              className="MuiBox-root MuiBox-root-17"
               style={
                 Object {
                   "display": "inline",
@@ -205,7 +209,7 @@ exports[`Question list tests Snapshot Testing 1`] = `
               test
             </div>
             <div
-              className="MuiBox-root MuiBox-root-17 difficulty"
+              className="MuiBox-root MuiBox-root-18 difficulty"
               style={
                 Object {
                   "fontWeight": 700,
@@ -217,10 +221,10 @@ exports[`Question list tests Snapshot Testing 1`] = `
             </div>
           </div>
           <div
-            className="MuiBox-root MuiBox-root-18 makeStyles-buttons-4"
+            className="MuiBox-root MuiBox-root-19 makeStyles-buttons-5"
           >
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-edit_btn-6 makeStyles-button-5 MuiButton-containedPrimary"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-edit_btn-7 makeStyles-button-6 MuiButton-containedPrimary"
               data-testid="edit-button"
               disabled={false}
               onBlur={[Function]}
@@ -259,7 +263,7 @@ exports[`Question list tests Snapshot Testing 1`] = `
               </span>
             </button>
             <button
-              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-delete_btn-7 makeStyles-button-5 MuiButton-containedPrimary"
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-delete_btn-8 makeStyles-button-6 MuiButton-containedPrimary"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
