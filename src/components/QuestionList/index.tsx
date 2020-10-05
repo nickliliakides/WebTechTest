@@ -25,6 +25,11 @@ const useStyles = makeStyles((theme: Theme) =>
         width: '25ch',
       },
     },
+    top_container: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
@@ -111,15 +116,17 @@ const QuestionListView: React.FC<IProps> = ({
     <CircularProgress className={classes.loader} thickness={6} size={80} />
   ) : (
     <Grid item={true} md={5}>
-      <h1>Questions</h1>
-      <Button
-        style={{ marginBottom: 12 }}
-        variant='contained'
-        color='primary'
-        onClick={() => getMoreQuestions()}
-      >
-        Fetch More Questions
-      </Button>
+      <div className={classes.top_container}>
+        <h1>Questions</h1>
+        <Button
+          style={{ marginLeft: 12 }}
+          variant='contained'
+          color='primary'
+          onClick={() => getMoreQuestions()}
+        >
+          Fetch More Questions
+        </Button>
+      </div>
       <Grid container spacing={3}>
         {questions &&
           questions.map((question: Question, index: number) => (
