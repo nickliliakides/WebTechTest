@@ -427,7 +427,7 @@ exports[`App component tests Snapshot Testing 1`] = `
       </div>
     </div>
     <div
-      className="MuiCircularProgress-root makeStyles-loader-30 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      className="MuiCircularProgress-root makeStyles-loader-31 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style={
         Object {
