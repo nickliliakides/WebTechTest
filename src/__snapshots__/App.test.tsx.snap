@@ -42,126 +42,274 @@ exports[`App component tests Snapshot Testing 1`] = `
             <div
               className="MuiPaper-root makeStyles-paper-4 MuiPaper-elevation1 MuiPaper-rounded"
             >
-              <h2
-                className="makeStyles-headings-3"
-                data-testid="header"
+              <div
+                className="makeStyles-paper_inner-5"
               >
-                Question
-              </h2>
-              <div>
+                <h2
+                  className="makeStyles-headings-3"
+                  data-testid="header"
+                >
+                  Question
+                </h2>
+                <div>
+                  <div
+                    className="MuiFormControl-root MuiTextField-root"
+                    data-testid="question-field"
+                  >
+                    <label
+                      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
+                      data-shrink={false}
+                      htmlFor="question"
+                      id="question-label"
+                    >
+                      Question
+                    </label>
+                    <div
+                      className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+                      onClick={[Function]}
+                    >
+                      <input
+                        aria-invalid={false}
+                        autoFocus={false}
+                        className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                        disabled={true}
+                        id="question"
+                        name="question"
+                        onAnimationStart={[Function]}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden={true}
+                        className="PrivateNotchedOutline-root-14 MuiOutlinedInput-notchedOutline"
+                      >
+                        <legend
+                          className="PrivateNotchedOutline-legendLabelled-16"
+                        >
+                          <span>
+                            Question
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
                 <div
-                  className="MuiFormControl-root MuiTextField-root"
-                  data-testid="question-field"
+                  className="makeStyles-flex-6"
                 >
+                  <h2
+                    className="makeStyles-headings-3 makeStyles-left-7"
+                  >
+                    Answers
+                  </h2>
+                  <h2
+                    className="makeStyles-headings-3 makeStyles-right-8"
+                  >
+                    Correct
+                  </h2>
+                </div>
+                <div
+                  className="makeStyles-flex-6"
+                >
+                  <div>
+                    <div
+                      className="MuiFormControl-root MuiTextField-root makeStyles-left-7"
+                    >
+                      <label
+                        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
+                        data-shrink={false}
+                      >
+                        Answer
+                      </label>
+                      <div
+                        className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+                        onClick={[Function]}
+                      >
+                        <input
+                          aria-invalid={false}
+                          autoFocus={false}
+                          className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          disabled={true}
+                          name="answer1"
+                          onAnimationStart={[Function]}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          required={false}
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden={true}
+                          className="PrivateNotchedOutline-root-14 MuiOutlinedInput-notchedOutline"
+                        >
+                          <legend
+                            className="PrivateNotchedOutline-legendLabelled-16"
+                          >
+                            <span>
+                              Answer
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
                   <label
-                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
-                    data-shrink={false}
-                    htmlFor="question"
-                    id="question-label"
+                    className="MuiFormControlLabel-root makeStyles-right-8 Mui-disabled"
                   >
-                    Question
-                  </label>
-                  <div
-                    className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
-                    onClick={[Function]}
-                  >
-                    <input
-                      aria-invalid={false}
-                      autoFocus={false}
-                      className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
-                      disabled={true}
-                      id="question"
-                      name="question"
-                      onAnimationStart={[Function]}
+                    <span
+                      aria-disabled={true}
+                      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-20 MuiCheckbox-root Component-root-18 PrivateSwitchBase-checked-21 Mui-checked Component-checked-19 PrivateSwitchBase-disabled-22 Mui-disabled Mui-disabled Mui-disabled"
+                      data-testid="checkbox"
                       onBlur={[Function]}
-                      onChange={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
-                      required={false}
-                      type="text"
-                      value=""
-                    />
-                    <fieldset
-                      aria-hidden={true}
-                      className="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={-1}
                     >
-                      <legend
-                        className="PrivateNotchedOutline-legendLabelled-15"
+                      <span
+                        className="MuiIconButton-label"
                       >
-                        <span>
-                          Question
-                        </span>
-                      </legend>
-                    </fieldset>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="makeStyles-flex-5"
-              >
-                <h2
-                  className="makeStyles-headings-3 makeStyles-left-6"
-                >
-                  Answers
-                </h2>
-                <h2
-                  className="makeStyles-headings-3 makeStyles-right-7"
-                >
-                  Correct
-                </h2>
-              </div>
-              <div
-                className="makeStyles-flex-5"
-              >
-                <div>
-                  <div
-                    className="MuiFormControl-root MuiTextField-root makeStyles-left-6"
-                  >
-                    <label
-                      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
-                      data-shrink={false}
-                    >
-                      Answer
-                    </label>
-                    <div
-                      className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
-                      onClick={[Function]}
-                    >
-                      <input
-                        aria-invalid={false}
-                        autoFocus={false}
-                        className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
-                        disabled={true}
-                        name="answer1"
-                        onAnimationStart={[Function]}
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        required={false}
-                        type="text"
-                        value=""
-                      />
-                      <fieldset
-                        aria-hidden={true}
-                        className="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
-                      >
-                        <legend
-                          className="PrivateNotchedOutline-legendLabelled-15"
+                        <input
+                          checked={true}
+                          className="PrivateSwitchBase-input-23"
+                          data-indeterminate={false}
+                          disabled={true}
+                          name="checked1"
+                          onChange={[Function]}
+                          type="checkbox"
+                        />
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
                         >
-                          <span>
-                            Answer
-                          </span>
-                        </legend>
-                      </fieldset>
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                    >
+                      
+                    </span>
+                  </label>
+                </div>
+                <div
+                  className="makeStyles-flex-6"
+                >
+                  <div>
+                    <div
+                      className="MuiFormControl-root MuiTextField-root makeStyles-left-7"
+                    >
+                      <label
+                        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
+                        data-shrink={false}
+                      >
+                        Answer
+                      </label>
+                      <div
+                        className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+                        onClick={[Function]}
+                      >
+                        <input
+                          aria-invalid={false}
+                          autoFocus={false}
+                          className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          disabled={true}
+                          name="answer2"
+                          onAnimationStart={[Function]}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          required={false}
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden={true}
+                          className="PrivateNotchedOutline-root-14 MuiOutlinedInput-notchedOutline"
+                        >
+                          <legend
+                            className="PrivateNotchedOutline-legendLabelled-16"
+                          >
+                            <span>
+                              Answer
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
                     </div>
                   </div>
+                  <label
+                    className="MuiFormControlLabel-root makeStyles-right-8 Mui-disabled"
+                  >
+                    <span
+                      aria-disabled={true}
+                      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-20 MuiCheckbox-root Component-root-18 PrivateSwitchBase-disabled-22 Mui-disabled Mui-disabled Mui-disabled"
+                      onBlur={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={-1}
+                    >
+                      <span
+                        className="MuiIconButton-label"
+                      >
+                        <input
+                          checked={false}
+                          className="PrivateSwitchBase-input-23"
+                          data-indeterminate={false}
+                          disabled={true}
+                          name="checked2"
+                          onChange={[Function]}
+                          type="checkbox"
+                        />
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                    >
+                      
+                    </span>
+                  </label>
                 </div>
-                <label
-                  className="MuiFormControlLabel-root makeStyles-right-7 Mui-disabled"
-                >
-                  <span
-                    aria-disabled={true}
-                    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiCheckbox-root Component-root-17 PrivateSwitchBase-checked-20 Mui-checked Component-checked-18 PrivateSwitchBase-disabled-21 Mui-disabled Mui-disabled Mui-disabled"
-                    data-testid="checkbox"
+                <div>
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-save_btn-10 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+                    data-testid="save-button"
+                    disabled={true}
                     onBlur={[Function]}
                     onDragLeave={[Function]}
                     onFocus={[Function]}
@@ -174,91 +322,34 @@ exports[`App component tests Snapshot Testing 1`] = `
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={-1}
+                    type="submit"
                   >
                     <span
-                      className="MuiIconButton-label"
+                      className="MuiButton-label"
                     >
-                      <input
-                        checked={true}
-                        className="PrivateSwitchBase-input-22"
-                        data-indeterminate={false}
-                        disabled={true}
-                        name="checked1"
-                        onChange={[Function]}
-                        type="checkbox"
-                      />
-                      <svg
-                        aria-hidden={true}
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <span
+                        className="MuiButton-startIcon MuiButton-iconSizeMedium"
                       >
-                        <path
-                          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <span
-                    className="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
-                  >
-                    
-                  </span>
-                </label>
-              </div>
-              <div
-                className="makeStyles-flex-5"
-              >
-                <div>
-                  <div
-                    className="MuiFormControl-root MuiTextField-root makeStyles-left-6"
-                  >
-                    <label
-                      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
-                      data-shrink={false}
-                    >
-                      Answer
-                    </label>
-                    <div
-                      className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
-                      onClick={[Function]}
-                    >
-                      <input
-                        aria-invalid={false}
-                        autoFocus={false}
-                        className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
-                        disabled={true}
-                        name="answer2"
-                        onAnimationStart={[Function]}
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        required={false}
-                        type="text"
-                        value=""
-                      />
-                      <fieldset
-                        aria-hidden={true}
-                        className="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
-                      >
-                        <legend
-                          className="PrivateNotchedOutline-legendLabelled-15"
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
                         >
-                          <span>
-                            Answer
-                          </span>
-                        </legend>
-                      </fieldset>
-                    </div>
-                  </div>
-                </div>
-                <label
-                  className="MuiFormControlLabel-root makeStyles-right-7 Mui-disabled"
-                >
-                  <span
-                    aria-disabled={true}
-                    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiCheckbox-root Component-root-17 PrivateSwitchBase-disabled-21 Mui-disabled Mui-disabled Mui-disabled"
+                          <path
+                            d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+                          />
+                        </svg>
+                      </span>
+                      Save
+                    </span>
+                  </button>
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-add_btn-11 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+                    data-testid="add-button"
+                    disabled={true}
                     onBlur={[Function]}
+                    onClick={[Function]}
                     onDragLeave={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -270,155 +361,68 @@ exports[`App component tests Snapshot Testing 1`] = `
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={-1}
+                    type="button"
                   >
                     <span
-                      className="MuiIconButton-label"
+                      className="MuiButton-label"
                     >
-                      <input
-                        checked={false}
-                        className="PrivateSwitchBase-input-22"
-                        data-indeterminate={false}
-                        disabled={true}
-                        name="checked2"
-                        onChange={[Function]}
-                        type="checkbox"
-                      />
-                      <svg
-                        aria-hidden={true}
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <span
+                        className="MuiButton-startIcon MuiButton-iconSizeMedium"
                       >
-                        <path
-                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                        />
-                      </svg>
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                          />
+                        </svg>
+                      </span>
+                      Add Answer
                     </span>
-                  </span>
-                  <span
-                    className="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
-                  >
-                    
-                  </span>
-                </label>
-              </div>
-              <div>
-                <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-save_btn-9 MuiButton-containedPrimary Mui-disabled Mui-disabled"
-                  data-testid="save-button"
-                  disabled={true}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={-1}
-                  type="submit"
-                >
-                  <span
-                    className="MuiButton-label"
+                  </button>
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-preview_btn-12 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+                    data-testid="preview-button"
+                    disabled={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={-1}
+                    type="button"
                   >
                     <span
-                      className="MuiButton-startIcon MuiButton-iconSizeMedium"
+                      className="MuiButton-label"
                     >
-                      <svg
-                        aria-hidden={true}
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <span
+                        className="MuiButton-startIcon MuiButton-iconSizeMedium"
                       >
-                        <path
-                          d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
-                        />
-                      </svg>
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                          />
+                        </svg>
+                      </span>
+                      Preview
                     </span>
-                    Save
-                  </span>
-                </button>
-                <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-add_btn-10 MuiButton-containedPrimary Mui-disabled Mui-disabled"
-                  data-testid="add-button"
-                  disabled={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={-1}
-                  type="button"
-                >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    <span
-                      className="MuiButton-startIcon MuiButton-iconSizeMedium"
-                    >
-                      <svg
-                        aria-hidden={true}
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
-                        />
-                      </svg>
-                    </span>
-                    Add Answer
-                  </span>
-                </button>
-                <button
-                  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-preview_btn-11 MuiButton-containedPrimary Mui-disabled Mui-disabled"
-                  data-testid="preview-button"
-                  disabled={true}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={-1}
-                  type="button"
-                >
-                  <span
-                    className="MuiButton-label"
-                  >
-                    <span
-                      className="MuiButton-startIcon MuiButton-iconSizeMedium"
-                    >
-                      <svg
-                        aria-hidden={true}
-                        className="MuiSvgIcon-root"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
-                        />
-                      </svg>
-                    </span>
-                    Preview
-                  </span>
-                </button>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -427,7 +431,7 @@ exports[`App component tests Snapshot Testing 1`] = `
       </div>
     </div>
     <div
-      className="MuiCircularProgress-root makeStyles-loader-31 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      className="MuiCircularProgress-root makeStyles-loader-33 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style={
         Object {

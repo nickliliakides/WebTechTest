@@ -212,225 +212,227 @@ const QuestionEditor: React.FC<IProps> = ({
         >
           <Fade top duration={700} delay={500}>
             <Paper className={classes.paper}>
-              <h2 data-testid='header' className={classes.headings}>
-                Question
-              </h2>
-              <TextValidator
-                id='question'
-                data-testid='question-field'
-                name='question'
-                label='Question'
-                value={question}
-                variant='outlined'
-                onChange={handleTextFieldChange}
-                validators={['required']}
-                errorMessages={['This field is required']}
-                disabled={!selectedQuestion.id ? true : false}
-              />
-              <div className={classes.flex}>
-                <h2 className={`${classes.headings} ${classes.left}`}>
-                  Answers
+              <div className={classes.paper_inner}>
+                <h2 data-testid='header' className={classes.headings}>
+                  Question
                 </h2>
-                <h2 className={`${classes.headings} ${classes.right}`}>
-                  Correct
-                </h2>
-              </div>
-              <div className={classes.flex}>
                 <TextValidator
-                  className={classes.left}
-                  name='answer1'
-                  label='Answer'
-                  value={answer1}
+                  id='question'
+                  data-testid='question-field'
+                  name='question'
+                  label='Question'
+                  value={question}
                   variant='outlined'
                   onChange={handleTextFieldChange}
                   validators={['required']}
                   errorMessages={['This field is required']}
                   disabled={!selectedQuestion.id ? true : false}
                 />
-                <FormControlLabel
-                  className={classes.right}
-                  control={
-                    <GreenCheckbox
-                      checked={checked1}
-                      onChange={handleCheckBoxChange}
-                      name='checked1'
-                      data-testid='checkbox'
-                    />
-                  }
-                  label=''
-                  disabled={!selectedQuestion.id ? true : false}
-                />
-              </div>
-              <div className={classes.flex}>
-                <TextValidator
-                  className={classes.left}
-                  name='answer2'
-                  label='Answer'
-                  value={answer2}
-                  variant='outlined'
-                  onChange={handleTextFieldChange}
-                  validators={['required']}
-                  errorMessages={['This field is required']}
-                  disabled={!selectedQuestion.id ? true : false}
-                />
+                <div className={classes.flex}>
+                  <h2 className={`${classes.headings} ${classes.left}`}>
+                    Answers
+                  </h2>
+                  <h2 className={`${classes.headings} ${classes.right}`}>
+                    Correct
+                  </h2>
+                </div>
+                <div className={classes.flex}>
+                  <TextValidator
+                    className={classes.left}
+                    name='answer1'
+                    label='Answer'
+                    value={answer1}
+                    variant='outlined'
+                    onChange={handleTextFieldChange}
+                    validators={['required']}
+                    errorMessages={['This field is required']}
+                    disabled={!selectedQuestion.id ? true : false}
+                  />
+                  <FormControlLabel
+                    className={classes.right}
+                    control={
+                      <GreenCheckbox
+                        checked={checked1}
+                        onChange={handleCheckBoxChange}
+                        name='checked1'
+                        data-testid='checkbox'
+                      />
+                    }
+                    label=''
+                    disabled={!selectedQuestion.id ? true : false}
+                  />
+                </div>
+                <div className={classes.flex}>
+                  <TextValidator
+                    className={classes.left}
+                    name='answer2'
+                    label='Answer'
+                    value={answer2}
+                    variant='outlined'
+                    onChange={handleTextFieldChange}
+                    validators={['required']}
+                    errorMessages={['This field is required']}
+                    disabled={!selectedQuestion.id ? true : false}
+                  />
 
-                <FormControlLabel
-                  className={classes.right}
-                  control={
-                    <GreenCheckbox
-                      checked={checked2}
-                      onChange={handleCheckBoxChange}
-                      name='checked2'
+                  <FormControlLabel
+                    className={classes.right}
+                    control={
+                      <GreenCheckbox
+                        checked={checked2}
+                        onChange={handleCheckBoxChange}
+                        name='checked2'
+                      />
+                    }
+                    label=''
+                    disabled={!selectedQuestion.id ? true : false}
+                  />
+                </div>
+                {(answer3 !== '' || !closed3) && (
+                  <div className={classes.flex}>
+                    <TextValidator
+                      className={classes.left}
+                      name='answer3'
+                      label='Answer'
+                      value={answer3}
+                      variant='outlined'
+                      onChange={handleTextFieldChange}
+                      validators={['required']}
+                      errorMessages={['This field is required']}
+                      disabled={answer3 === '' && closed3 ? true : false}
                     />
-                  }
-                  label=''
-                  disabled={!selectedQuestion.id ? true : false}
-                />
-              </div>
-              {(answer3 !== '' || !closed3) && (
-                <div className={classes.flex}>
-                  <TextValidator
-                    className={classes.left}
-                    name='answer3'
-                    label='Answer'
-                    value={answer3}
-                    variant='outlined'
-                    onChange={handleTextFieldChange}
-                    validators={['required']}
-                    errorMessages={['This field is required']}
-                    disabled={answer3 === '' && closed3 ? true : false}
-                  />
-                  <DeleteForeverIcon
-                    onClick={() => handleDelete('answer3', 'closed3')}
-                    className={classes.delete_icon}
-                    name={answer3}
-                    data-testid='delete-icon'
-                  />
-                  <FormControlLabel
-                    className={classes.right}
-                    control={
-                      <GreenCheckbox
-                        checked={checked3}
-                        onChange={handleCheckBoxChange}
-                        name='checked3'
-                      />
+                    <DeleteForeverIcon
+                      onClick={() => handleDelete('answer3', 'closed3')}
+                      className={classes.delete_icon}
+                      name={answer3}
+                      data-testid='delete-icon'
+                    />
+                    <FormControlLabel
+                      className={classes.right}
+                      control={
+                        <GreenCheckbox
+                          checked={checked3}
+                          onChange={handleCheckBoxChange}
+                          name='checked3'
+                        />
+                      }
+                      label=''
+                      disabled={closed3}
+                    />
+                  </div>
+                )}
+                {(answer4 !== '' || !closed4) && (
+                  <div className={classes.flex}>
+                    <TextValidator
+                      className={classes.left}
+                      name='answer4'
+                      label='Answer'
+                      value={answer4}
+                      variant='outlined'
+                      onChange={handleTextFieldChange}
+                      validators={['required']}
+                      errorMessages={['This field is required']}
+                      disabled={answer4 === '' && closed4 ? true : false}
+                    />
+                    <DeleteForeverIcon
+                      onClick={() => handleDelete('answer4', 'closed4')}
+                      className={classes.delete_icon}
+                    />
+                    <FormControlLabel
+                      className={classes.right}
+                      control={
+                        <GreenCheckbox
+                          checked={checked4}
+                          onChange={handleCheckBoxChange}
+                          name='checked4'
+                        />
+                      }
+                      label=''
+                      disabled={closed4}
+                    />
+                  </div>
+                )}
+                {(answer5 !== '' || !closed5) && (
+                  <div className={classes.flex}>
+                    <TextValidator
+                      className={classes.left}
+                      name='answer5'
+                      label='Answer'
+                      value={answer5}
+                      variant='outlined'
+                      onChange={handleTextFieldChange}
+                      validators={['required']}
+                      errorMessages={['This field is required']}
+                      disabled={answer5 === '' && closed5 ? true : false}
+                    />
+                    <DeleteForeverIcon
+                      onClick={() => handleDelete('answer5', 'closed5')}
+                      className={classes.delete_icon}
+                    />
+                    <FormControlLabel
+                      className={classes.right}
+                      control={
+                        <GreenCheckbox
+                          checked={checked5}
+                          onChange={handleCheckBoxChange}
+                          name='checked5'
+                        />
+                      }
+                      label=''
+                      disabled={closed5}
+                    />
+                  </div>
+                )}
+                <div>
+                  <Button
+                    data-testid='save-button'
+                    className={classes.save_btn}
+                    variant='contained'
+                    color='primary'
+                    type='submit'
+                    startIcon={
+                      state.submitted ? (
+                        <CircularProgress size={20} />
+                      ) : (
+                        <SaveIcon />
+                      )
                     }
-                    label=''
-                    disabled={closed3}
-                  />
+                    disabled={state.submitted || !selectedQuestion.id}
+                  >
+                    Save
+                  </Button>
+                  <Button
+                    data-testid='add-button'
+                    className={classes.add_btn}
+                    variant='contained'
+                    color='primary'
+                    type='button'
+                    disabled={
+                      (!closed3 && !closed4 && !closed5) || !selectedQuestion.id
+                    }
+                    startIcon={<AddBoxIcon />}
+                    onClick={handleNewInput}
+                  >
+                    Add Answer
+                  </Button>
+                  <Button
+                    data-testid='preview-button'
+                    className={classes.preview_btn}
+                    variant='contained'
+                    color='primary'
+                    type='button'
+                    disabled={!selectedQuestion.id}
+                    startIcon={<VisibilityIcon />}
+                    onClick={() => {
+                      if (selectedQuestion.id) {
+                        setPreview(true);
+                        setTimeout(() => setPreview(false), 200);
+                      }
+                    }}
+                  >
+                    Preview
+                  </Button>
                 </div>
-              )}
-              {(answer4 !== '' || !closed4) && (
-                <div className={classes.flex}>
-                  <TextValidator
-                    className={classes.left}
-                    name='answer4'
-                    label='Answer'
-                    value={answer4}
-                    variant='outlined'
-                    onChange={handleTextFieldChange}
-                    validators={['required']}
-                    errorMessages={['This field is required']}
-                    disabled={answer4 === '' && closed4 ? true : false}
-                  />
-                  <DeleteForeverIcon
-                    onClick={() => handleDelete('answer4', 'closed4')}
-                    className={classes.delete_icon}
-                  />
-                  <FormControlLabel
-                    className={classes.right}
-                    control={
-                      <GreenCheckbox
-                        checked={checked4}
-                        onChange={handleCheckBoxChange}
-                        name='checked4'
-                      />
-                    }
-                    label=''
-                    disabled={closed4}
-                  />
-                </div>
-              )}
-              {(answer5 !== '' || !closed5) && (
-                <div className={classes.flex}>
-                  <TextValidator
-                    className={classes.left}
-                    name='answer5'
-                    label='Answer'
-                    value={answer5}
-                    variant='outlined'
-                    onChange={handleTextFieldChange}
-                    validators={['required']}
-                    errorMessages={['This field is required']}
-                    disabled={answer5 === '' && closed5 ? true : false}
-                  />
-                  <DeleteForeverIcon
-                    onClick={() => handleDelete('answer5', 'closed5')}
-                    className={classes.delete_icon}
-                  />
-                  <FormControlLabel
-                    className={classes.right}
-                    control={
-                      <GreenCheckbox
-                        checked={checked5}
-                        onChange={handleCheckBoxChange}
-                        name='checked5'
-                      />
-                    }
-                    label=''
-                    disabled={closed5}
-                  />
-                </div>
-              )}
-              <div>
-                <Button
-                  data-testid='save-button'
-                  className={classes.save_btn}
-                  variant='contained'
-                  color='primary'
-                  type='submit'
-                  startIcon={
-                    state.submitted ? (
-                      <CircularProgress size={20} />
-                    ) : (
-                      <SaveIcon />
-                    )
-                  }
-                  disabled={state.submitted || !selectedQuestion.id}
-                >
-                  Save
-                </Button>
-                <Button
-                  data-testid='add-button'
-                  className={classes.add_btn}
-                  variant='contained'
-                  color='primary'
-                  type='button'
-                  disabled={
-                    (!closed3 && !closed4 && !closed5) || !selectedQuestion.id
-                  }
-                  startIcon={<AddBoxIcon />}
-                  onClick={handleNewInput}
-                >
-                  Add Answer
-                </Button>
-                <Button
-                  data-testid='preview-button'
-                  className={classes.preview_btn}
-                  variant='contained'
-                  color='primary'
-                  type='button'
-                  disabled={!selectedQuestion.id}
-                  startIcon={<VisibilityIcon />}
-                  onClick={() => {
-                    if (selectedQuestion.id) {
-                      setPreview(true);
-                      setTimeout(() => setPreview(false), 200);
-                    }
-                  }}
-                >
-                  Preview
-                </Button>
               </div>
             </Paper>
           </Fade>

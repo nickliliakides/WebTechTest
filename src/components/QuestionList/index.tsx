@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Box, Button } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -31,12 +31,23 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: 'center',
     },
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(1),
       textAlign: 'center',
       color: theme.palette.text.secondary,
-      display: 'flex',
       opacity: '.85',
+      backgroundColor: '#e6e6e6',
+      transition: 'transform .6s ease-out',
+      '&:hover': {
+        transform: 'scale(1.03, 1.05)',
+      },
+    },
+    paper_inner: {
+      margin: 8,
+      backgroundColor: 'white',
+      display: 'flex',
       justifyContent: 'space-evenly',
+      border: '2px groove #0e4b16',
+      boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
     },
     questionDetails: {
       padding: theme.spacing(2),
@@ -70,6 +81,7 @@ const useStyles = makeStyles((theme: Theme) =>
     delete_btn: {
       backgroundColor: 'red',
       marginTop: 10,
+      transition: 'all .3s ease',
       '&:hover': {
         backgroundColor: 'red',
         opacity: 0.8,
@@ -94,13 +106,20 @@ const QuestionListView: React.FC<IProps> = ({
   questions,
 }): JSX.Element => {
   const classes = useStyles();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     dispatch(getQuestionsRequest());
-  }, [dispatch]);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, [dispatch, loading]);
 
   const getMoreQuestions = (): void => {
     dispatch(getQuestionsRequest());
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
 
   const deleteQuestion = (index: number): void => {
@@ -112,7 +131,7 @@ const QuestionListView: React.FC<IProps> = ({
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   };
 
-  return questions && questions.length === 0 ? (
+  return questions && questions.length === 0 && loading ? (
     <CircularProgress className={classes.loader} thickness={6} size={80} />
   ) : (
     <Grid item={true} md={5}>
@@ -131,38 +150,40 @@ const QuestionListView: React.FC<IProps> = ({
         {questions &&
           questions.map((question: Question, index: number) => (
             <Grid item xs={12} key={index}>
-              <Fade right duration={600} delay={70 * index}>
+              <Fade right duration={600} delay={50 * index}>
                 <Paper className={classes.paper}>
-                  <Box className={classes.questionDetails}>
-                    <Box>{question.question}</Box>
-                    <Box style={{ display: 'inline', fontWeight: 700 }}>
-                      Category: {question.category}
+                  <div className={classes.paper_inner}>
+                    <Box className={classes.questionDetails}>
+                      <Box>{question.question}</Box>
+                      <Box style={{ display: 'inline', fontWeight: 700 }}>
+                        Category: {question.category}
+                      </Box>
+                      <Box style={{ fontWeight: 700 }} className='difficulty'>
+                        Difficulty: {question.difficulty}
+                      </Box>
                     </Box>
-                    <Box style={{ fontWeight: 700 }} className='difficulty'>
-                      Difficulty: {question.difficulty}
+                    <Box className={classes.buttons}>
+                      <Button
+                        data-testid='edit-button'
+                        className={`${classes.edit_btn} ${classes.button}`}
+                        variant='contained'
+                        color='primary'
+                        onClick={() => editQuestion(question)}
+                        startIcon={<EditIcon />}
+                      >
+                        Edit
+                      </Button>
+                      <Button
+                        className={`${classes.delete_btn} ${classes.button}`}
+                        variant='contained'
+                        color='primary'
+                        onClick={() => deleteQuestion(question.id)}
+                        startIcon={<DeleteIcon />}
+                      >
+                        Delete{' '}
+                      </Button>
                     </Box>
-                  </Box>
-                  <Box className={classes.buttons}>
-                    <Button
-                      data-testid='edit-button'
-                      className={`${classes.edit_btn} ${classes.button}`}
-                      variant='contained'
-                      color='primary'
-                      onClick={() => editQuestion(question)}
-                      startIcon={<EditIcon />}
-                    >
-                      Edit
-                    </Button>
-                    <Button
-                      className={`${classes.delete_btn} ${classes.button}`}
-                      variant='contained'
-                      color='primary'
-                      onClick={() => deleteQuestion(question.id)}
-                      startIcon={<DeleteIcon />}
-                    >
-                      Delete{' '}
-                    </Button>
-                  </Box>
+                  </div>
                 </Paper>
               </Fade>
             </Grid>

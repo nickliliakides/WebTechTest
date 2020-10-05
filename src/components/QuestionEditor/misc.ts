@@ -21,6 +21,14 @@ export const useStyles = makeStyles((theme: Theme) =>
       marginRight: 20,
       padding: 20,
       opacity: '.85',
+      backgroundColor: '#e6e6e6',
+    },
+    paper_inner: {
+      margin: 8,
+      padding: 20,
+      backgroundColor: 'white',
+      border: '2px groove #0e4b16',
+      boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
     },
     flex: {
       display: 'flex',
